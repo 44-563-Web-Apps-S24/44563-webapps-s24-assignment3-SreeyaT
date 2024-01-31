@@ -51,5 +51,20 @@
             <td>Ravinder Singh</td>
         </tr>
     </table>
+    <hr>
+    <h3>Code snippet</h3>
+    With Python's built-in json module, reading data from a JSON file is a simple operation. 
+    Importing the json module into your script is the first step.
+     After importation, use the open() function in a with statement to open the JSON file.
+      This guarantees that, after reading, the file is correctly closed. 
+    The JSON file's content should then be loaded into a Python data structure—a dictionary or list is a common choice—using the json.load() function. 
+    <pre>
+        import json
+
+def read_json_from_file(filepath):
+	with open(filepath, "r") as f:
+    data = json.load(f) 
+    </pre>
+    <a href="https://code.pieces.app/collections/python">Link to my snippet</a>
 </body>
 </html>
